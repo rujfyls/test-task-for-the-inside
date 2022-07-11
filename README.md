@@ -87,3 +87,15 @@ _docker compose -f docker-compose.yml up_
 ]</pre>
 
 --------------------------------------------------------
+
+
+В данном проекте использованы следующие технологии:
+- Spring Boot
+- Spring Security + jjwt
+- Flyway
+- Hibernate
+- PostgreSQL
+- H2
+- JUnit
+- Mockito
+- Docker

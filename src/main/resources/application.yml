@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+jwt:
+  secret:
+    access: qBTmv4oXFFR2GwjexDJ4t6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/users-jwt-token
+#    url: jdbc:postgresql://localhost:5432/users-jwt-token
+    username: ruj
+    password: rujpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+      show-sql: true

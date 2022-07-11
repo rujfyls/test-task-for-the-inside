@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:13.7
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: rujpass
+      POSTGRES_USER: ruj
+      POSTGRES_DB: users-jwt-token
+
+  app:
+    image: rujfyls/test-task-for-the-inside:0.1.0
+    ports:
+      - 8888:8888
+
+# docker compose -f docker-compose.yml up
