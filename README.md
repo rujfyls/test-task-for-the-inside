@@ -22,7 +22,7 @@ _docker compose -f docker-compose.yml up_
 <br><br>
 
 - **POST** method /api/auth/login (произвести авторизацию) <br>
-**curl:** curl -H "Content-Type: application/json" -X POST http://localhost:8888/api/auth/login -d "{\"login\":\"alex\",\"password\":\"1234\"}"
+**curl:** curl -H "Content-Type: application/json" -X POST http://localhost:8888/api/auth/login -d "{\\\"login\\\":\\\"alex\\\",\\\"password\\\":\\\"1234\\\"}"
 
 <pre>
 {
@@ -40,7 +40,7 @@ _docker compose -f docker-compose.yml up_
 - **POST** method /api/message (сохранение сообщения) <br>
 **curl:** curl -H "Content-Type: application/json"
   -H "Authorization: Bearer token"
-  -X POST http://localhost:8888/api/message -d "{\"name\":\"Alexander\",\"message\":\"тестовое сообщение\"}"
+  -X POST http://localhost:8888/api/message -d "{\\\"name\\\":\\\"Alexander\\\",\\\"message\\\":\\\"тестовое сообщение\\\"}"
 
 <pre>
 {
@@ -60,7 +60,7 @@ _docker compose -f docker-compose.yml up_
 - **POST** method /api/message (получить N последних сообщений) <br>
 **curl**: curl -H "Content-Type: application/json"
   -H "Authorization: Bearer token"
-  -X POST http://localhost:8888/api/message -d "{\"name\":\"Alexander\",\"message\":\"history 2\"}"
+  -X POST http://localhost:8888/api/message -d "{\\\"name\\\":\\\"Alexander\\\",\\\"message\\\":\\\"history 2\\\"}"
 
 <pre>
 {
